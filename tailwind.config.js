@@ -6,13 +6,37 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+    container : {
+      center : true,
+      padding : "20px"
+      
     },
+
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1144px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1144px',
+      // => @media (min-width: 1536px) { ... }
+    },
+    extend: {
+      colors : {
+        "dark" : "#212524",
+        'gray' : "#E0E0E0",
+        "dark-gray" : "#BBBBBB"
+
+      }
+    },
+    
   },
   plugins: [],
 };
